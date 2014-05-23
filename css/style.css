@@ -35,3 +35,12 @@
 .unflipped{
 	background-image: none !important;
 }
+
+.congrats{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    color: #27ae60;
+}

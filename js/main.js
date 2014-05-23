@@ -3,7 +3,8 @@ var images = ['1.png','2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.p
 	click1 = '-1',
 	found = 0, 
 	tiles_number = 16,
-	done = true;
+	done = true,
+    finished = false;
 
 // populate main holder with tiles
 for (var i = 0; i < tiles_number; i++){
@@ -57,8 +58,9 @@ $(document).ready(function(){
 		}
 
 		setTimeout(function() {
-			if(found == 8){
-				alert('done');
+			if(found == 8 && !finished){
+				$('#mainWrapper').after('<p class="congrats">Congrats, <br/>you made it.</p>');
+                finished = true;
 			}
 		}, 1000);
 	});
