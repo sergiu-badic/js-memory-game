@@ -1,0 +1,37 @@
+#mainWrapper{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #f39c12;
+}
+
+.tile{
+	float: left;
+	width: 123px;
+	height: 123px;
+	border: solid 1px #fff;
+	/*box-shadow: 5px 5px 0 #ecf0f1;*/
+	text-align: center;
+	background-size:auto 80px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.hover{
+	position: absolute;;
+	float: left;
+	width: 123px;
+	height: 123px;
+	border: solid 1px #000;
+	background-color: #ff0000;
+}
+
+.element{
+	max-width: 100px;
+	max-height: 100px;
+	margin-top: 10px;
+}
+
+.unflipped{
+	background-image: none !important;
+}
